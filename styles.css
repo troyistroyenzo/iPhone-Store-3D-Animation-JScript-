@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 150vh;
+  justify-content: center;
+  perspective: 1500px;
+}
+
+nav {
+  height: 54px;
+  background: #000;
+  align-items: center;
+}
+
+.menu {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  overflow: hidden;
+}
+
+.menu ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li,
+.menu ul li a {
+  color: #ffffff;
+  line-height: 44px;
+  text-decoration: none;
+}
+
+.menu ul li.fa.fa-apple {
+  font-size: 20px;
+}
+
+.menu ul li a-menu-item {
+  transform: scale(1);
+  transition: 0.5s;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  padding-left: 980px;
+  padding-top: 100px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.card {
+  transform-style: preserve-3d;
+  min-height: 75rem;
+  width: 195rem;
+  border-radius: 30px;
+  padding: 0rem 3.2rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.phone {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone img {
+  width: 25rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+
+.circle {
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle.twelve-orange {
+  background: linear-gradient(to right, #e87957, #ffab76);
+}
+
+.circle.flip-lilac {
+  background: linear-gradient(to right, #746bc7, #625d92);
+}
+
+.circle.twelve-blue {
+  background: linear-gradient(to right, #3f6b84, #a2c3cc);
+}
+
+.circle.twelve-red {
+  background: linear-gradient(to right, #d32e2c, #4e1218);
+}
+
+.info h1 {
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+}
+
+.info h2 {
+  font-size: 1rem;
+  transition: all 0.75s ease-out;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+
+.models {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+}
+
+.models button {
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+  transition: all 0.75s ease-out;
+}
+
+.colors {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+}
+
+.colors button {
+  font-size: 0.7rem;
+  padding: 1rem 1rem;
+  padding: 10px;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+  transition: all 0.75s ease-out;
+}
+
+button.active {
+  color: white;
+  background: #585858;
+}
+
+.purchase {
+  margin-top: 1.5rem;
+  transition: all 0.75s ease-out;
+}
+
+.purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+  transition: all 0.75s ease-out;
+}
